@@ -1,0 +1,8 @@
+Time, Cargo Company Name, Cargo Description, StartingPlace, Destination
+0, BobCo, Sprockets, C, B
+0, BobCo, Sprockets, A, O 
+0, BobCo, Sprockets, B, O 
+1, Jay Comp LLC, Widget1, C, D
+1, Stuff Corp, Stuffs, F, P
+2, BobCo, Paperwork, C, F
+2, Blockbuster, Video Cargo, G, N

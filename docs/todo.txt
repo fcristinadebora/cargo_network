@@ -1,0 +1,19 @@
+Requirements:
+- Companies, vehicles and locations can be given manually
+- Routes should be given by a text file
+- Cargo orders should be given by a text file
+- Each vehicle works for 1 of the companies may travel between the routes listed
+- The vehicle can then wait until there for new cargo order since the company owns the site or it may be transferred somewhere else to take another order
+- If a vehicle travels to a site that they do not own they may pickup any already waiting packages bound for their own company sites, but they may not wait at the site, The must move on back to there own sites to wait.
+- Challenge 1- The exception is company Red which allows any company vehicles to wait at their sites. If a vehicle for another company transfers cargo for that company both companies will split the cost evenly. 
+- if a company’s cargo vehicle goes to a rival company to get the cargo and return it to their site the 2 companies will share the cost
+- to decide what to do with the cargo company Blue looks at its vehicles and if none are nearby then it will allow the Black company vehicle to take the cargo.
+- Otherwise if there is a nearby vehicle that can take the cargo Blue will use their own vehicle
+- Challenge 2 - Vehicles for companies Blue and Red can transfer a total of 3 cargos (we will ignore size of the cargo and weight for now) however Black and Green can only carry 2 cargos at a time. 
+- If a cargo is bound for a site that is beyond the companies network (say from A to H), the starting location company will transfer it to another company along the way and will leave the cargo for that company to finish the job.
+- The company will get paid in full the portion of the trip it has completed and the other company (or companies) will get their share for the portion of the trip they contribute to.
+- Challenge 3- Company Blue has an agreement with company Black and Green to allow their vehicles to move through their sites but the cost of the trip is split along the routes that belong to company Blue. 
+- Cargo that waits at the starting location will incur a penalty of .5 currency every hour the cargo waits.
+- Companies will appreciate the program routing their cargo through the least costly routes available but if there is a cargo that needs to be picked up perhaps your vehicle may take a less efficient route. - Challenge 4- If this is done company Red and Blue will charge the full price whereas company Green and Black will charge only for the most efficient route.
+- Challenge 5- Other consideration for shipping may be taken such as the quickest route as opposed to the least costly. Or some companies want their goods to be transferred to the fewest other companies/vehicles, if their cargo is delicate/fragile. The file adds a tag to the order file at the end of the line: Cost, Time, Transfers.
+- Output should show an hour by hour display of all the active cargo (currently taken in and not at its destination yet), where it is, if it is in transit, and once it reaches the destination. Additionally, a list of each vehicle should also be shown, where they are and what they are doing:
